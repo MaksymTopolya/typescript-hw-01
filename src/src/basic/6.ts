@@ -7,14 +7,10 @@ interface Mango {
     name: string;
     age: number;
     email: string;
-    address: Address;
+    address?: Address;
 }
 
-interface Poly {
-    name: string;
-    age: number;
-    email: string;
-}
+
 
 const mango: Mango = {
     name: 'Mango',
@@ -26,7 +22,7 @@ const mango: Mango = {
     }
 };
 
-const poly: Poly = {
+const poly: Mango = {
     name: 'Poly',
     age: 25,
     email: 'poly@example.com'
